@@ -1,20 +1,11 @@
 # frozen_string_literal: true
 
-class Distrb::Beta
+class Distrb::Beta < Distrb::Distribution
+  require_relative './beta/tgv'
+
+  attr_reader :sampler
+
   def initialize alpha, beta
-    @alpha = alpha
-    @beta = beta
-  end
-
-  def sample
-    tgv
-  end
-
-  private
-
-  def tgv
-    r1 = Gamma.new(@alpha, 1).sample
-    r2 = Gamma.new(@beta, 1).sample
-    r1 / (r1 + r2)
+    @sampler = TGV.new alpha, beta
   end
 end

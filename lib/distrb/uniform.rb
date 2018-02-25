@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
-class Distrb::Uniform
-  def sample *args
-    Random.new.rand(*args)
+class Distrb::Uniform < Distrb::Distribution
+  require_relative './uniform/mersenne_twister'
+
+  attr_reader :sampler
+
+  def initialize
+    @sampler = MersenneTwister.new
   end
 end
