@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+#
+# Internal class for Marsaglia and Tsang's method.
+#
+# Actual implementation of the algorithm for `alpha < 1`.
+#
 class Distrb::Gamma::MarsagliaTsang::HighAlpha
   def initialize alpha
     @alpha = alpha

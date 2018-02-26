@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+#
+# Top-level module of distrb gem.
+#
 module Distrb
   require_relative './distrb/version'
   require_relative './distrb/distribution'

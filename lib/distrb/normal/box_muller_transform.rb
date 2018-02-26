@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
-class Distrb::Normal::BoxMullersMethod
+#
+# Box-Muller transform to sample from Normal distribution
+# See: https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform
+#
+class Distrb::Normal::BoxMullerTransform
   def initialize
     @uniform = Distrb::Uniform.new
   end

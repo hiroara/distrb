@@ -1,5 +1,3 @@
-inherit_from: .rubocop_todo.yml
-
 # Cop supports --auto-correct.
 # Configuration parameters: AutoCorrect, EnforcedStyle.
 # SupportedStyles: nested, compact
@@ -15,3 +13,8 @@ Style/MethodDefParentheses:
 # Cop supports --auto-correct.
 Style/RedundantSelf:
   Enabled: false
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'

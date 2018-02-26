@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+#
+# Gamma distribution
+# See: https://en.wikipedia.org/wiki/Gamma_distribution
+#
 class Distrb::Gamma < Distrb::Distribution
   require_relative './gamma/marsaglia_tsang'
 
