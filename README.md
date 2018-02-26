@@ -1,12 +1,9 @@
-# Distrb
+# distrb
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/distrb`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is probability distribution for Ruby.
+Currently, this aims to sample from some distributions.
 
 ## Installation
-
-Add this line to your application's Gemfile:
 
 ```ruby
 gem 'distrb'
@@ -22,7 +19,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    > dist = Distrb::Uniform.new
+    > dist.sample # => 0.31009806817895547
+
+That's all!
+
+Supported probabiliry distributions: [Distrb::Uniform](lib/distrb/uniform.rb), [Distrb::Normal](lib/distrb/normal.rb), [Distrb::Gamma](lib/distrb/gamma.rb), [Distrb::Beta](lib/distrb/beta.rb)
 
 ## Development
 
@@ -32,4 +34,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/distrb.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hiroara/distrb.

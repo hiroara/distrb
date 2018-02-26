@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Hiroki Arai']
   spec.email         = ['hiroara62@gmail.com']
 
-  spec.summary       = 'Statistics Distribution for Ruby'
-  spec.description   = 'This library implements statistics distributions.'
+  spec.summary       = 'Probability Distribution for Ruby'
+  spec.description   = 'This library implements probability distributions.'
   spec.homepage      = 'https://github.com/hiroara/distrb'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
