@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Distrb::Beta do
-  let(:instance) { described_class.new }
+  let(:instance) { described_class.new 5, 3 }
 
   describe '#sampler' do
     subject { instance.sampler }
