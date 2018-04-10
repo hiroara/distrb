@@ -22,9 +22,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.16'
+  spec.add_development_dependency 'gsl', '~> 2.1.0'
   spec.add_development_dependency 'guard', '~> 2.14.0'
   spec.add_development_dependency 'guard-rspec', '~> 4.7.0'
   spec.add_development_dependency 'guard-rubocop', '~> 1.3.0'
+  spec.add_development_dependency 'pry', '~> 0.11.3'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.52.0'
